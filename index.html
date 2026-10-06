@@ -2,51 +2,68 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="description" content="Kitchen Hands - حلول عملية لحفظ ونقل الطعام للمطابخ المنزلية والصناعية." />
   <meta name="theme-color" content="#111111" />
   <title>Kitchen Hands | كتشن هاندس</title>
+
+  <!-- Arabic font close to the brand style -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <main class="hero" aria-label="Kitchen Hands">
+
+  <header class="hero" id="home">
     <img
       class="hero-image"
       src="kitchen-hands-hero.png"
-      alt="Kitchen Hands - كتشن هاندس، حلول عملية لحفظ ونقل الطعام للمطابخ المنزلية والصناعية"
+      alt="Kitchen Hands - كتشن هاندس"
     />
 
-    <div class="bottom-bar">
-      <div class="status">
-        <span class="dot" aria-hidden="true"></span>
-        <span>قريباً</span>
-      </div>
+    <nav class="hero-nav" aria-label="التنقل الرئيسي">
+      <a href="#about">من نحن</a>
+      <a href="#products">منتجات</a>
+      <a href="#contact">تواصل معنا</a>
+    </nav>
+  </header>
 
-      <div class="actions">
-        <a
-          class="btn btn-light"
-          href="https://www.google.com/maps/search/?api=1&query=Istanbul%2C%20Turkey"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="الموقع: إسطنبول، تركيا"
-        >
-          <span class="icon" aria-hidden="true">⌖</span>
-          <span>إسطنبول، تركيا</span>
-        </a>
+  <main>
+    <section class="section" id="about">
+      <div class="section-inner">
+        <span class="eyebrow">KITCHEN HANDS</span>
+        <h2>من نحن</h2>
+        <p>
+          كتشن هاندس علامة متخصصة في تقديم حلول عملية لحفظ ونقل الطعام
+          للمطابخ المنزلية والصناعية، مع التركيز على الجودة والعملية والتصميم.
+        </p>
+      </div>
+    </section>
 
-        <a
-          class="btn btn-dark"
-          href="https://wa.me/905364553111"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="تواصل معنا على واتساب"
-        >
-          <span class="icon" aria-hidden="true">◉</span>
-          <span dir="ltr">+90 536 455 31 11</span>
-          <span class="arrow" aria-hidden="true">←</span>
+    <section class="section section-alt" id="products">
+      <div class="section-inner">
+        <span class="eyebrow">OUR PRODUCTS</span>
+        <h2>منتجات</h2>
+        <p>
+          مجموعة مختارة من أوعية حفظ الطعام، الحاويات، أدوات النقل والتخزين
+          وحلول المطابخ العملية.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="section-inner">
+        <span class="eyebrow">CONTACT</span>
+        <h2>تواصل معنا</h2>
+        <p>يسعدنا التواصل معكم والاستفسار عن المنتجات والطلبات.</p>
+        <a class="contact-btn" href="https://wa.me/905364553111" target="_blank" rel="noopener noreferrer">
+          تواصل عبر واتساب
         </a>
       </div>
-    </div>
+    </section>
   </main>
+
 </body>
 </html>
